@@ -1,0 +1,18 @@
+{
+  "name": "course-reg-helper",
+  "version": "1.0.0",
+  "description": "companion helper to a course opening notification service that automates the registration process",
+  "main": "register.js",
+  "scripts": {
+    "register": "./node_modules/.bin/selenium-standalone install && ./node_modules/.bin/selenium-standalone start & sleep 10 && node register.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Lee",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^5.12.5"
+  },
+  "devDependencies": {
+    "selenium-standalone": "^6.16.0"
+  }
+}

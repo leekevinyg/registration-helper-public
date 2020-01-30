@@ -1,0 +1,35 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+env:
+  global:
+  - CXX=g++-4.8
+  - DISPLAY=:99.0
+  - CHROME_BIN=/usr/bin/google-chrome
+  - secure: i53Yw+LARLp4q4yd7/JP1vuUfCot3jK+NMgjiWN59Avpk93++zHvxF5iydVtJtGSyfA5zgb0OwzouzquL9frd9zB7XSrdcbblabfdVtevSEV2kGc4og/B/HqDPtzkkaHq3Hwc+9oanJqkcbSkvj0N9izo+MmgKdslXDbXc/ztuBkWSxZdNJ20ycnzPpdXl9KBVlEwSueKH8/O7guMC416OEo3xrhbs14+GzYFSk3EAEkiBz7JOvqpWuvPW6JulJZXwixLcZR24zKD0rRnHf4O+P71qvW+xv73WVawA3GDGW6vZyuYuli/nU+OKSeib88PxwxkJ4R+lMEW2oIgG/ieG57LLo5u3RU3mpAURny0kTw6fDnaCSgLv0QudAvLWIi1HyuWGXQKapRY6Cg5tiMYmO9980sei/5h0QfABeZq2Q+J9JyN51p9UnibmwvXht/HruFM+SoTXek21qN7FtsONIrgqx4f8s11/sy1x/dqpMic74Pib8tLriZKKiGxe3xnO02vYsklohL4Zobl4Q8hwQ2BbZyIKulrIsJOyuT0FNk7unrwudCJLqYv1f8mtx49MqNzRZHEkpuD24Ca+Nncx/R6ZldvrDo8sdDrxgnS5xihxPICHIl3pCieOTaTn/ymeSbCifsuSKG95hZHAsvRrMQayn0e5rwUqtApwx87+g=
+  - secure: QSllFPIjUbApvbz2xlISoV0MB0UEnPxbyeMrW/Q9A3T9urZ9zI1YX6BdmzSoNhBfNQbUtUskeM9tyLi2Zfs8KgBI3aowS3Ymi2JLQX5w2W+QSstTaCxOH55oVeBeW58hKr132/2eaJVTN4Nj4jFgKtfetTcX4VwBtqSnCKM3tuSwddUds1KbmWA7nYGAVp7Nhj0HkQjDbC3xZ5OlI6nlzx9AgRBLsXqPc8SbPd4a0IIhGN6o3+7on4mShdK8d1CTXjhk8VNVY72cYiVl0aimLauXmODxooUtBpXNKras16RM/9+ntopTDOaDxdjGeaVXDldwdswAPizpXvU+Pawdjuvds1lp9RhxnN/R3MkNSQvIQ6XjcsOfVoCa+bzVDZVFgoSqYzO+PLg4/fW9u/HB0vgZxMn8WQQYXwF6oFO5siS/35BSH6S1OBEWTjrV0KKbkw6LJAEVDMmhkExwhOYbB8ChXi+zpOzxFh82lCvKrBRvt9RqAtwHi6SDCQyJzVFJ1yL8/RLp08LFHvdgXg7pIY1Bp/GSu64D45ZLavUEnV1pqf4zI/j5LbDf47FOmEGpM3Ax5KjNirEIEvr0BQvwLteErLABVO8MFVWG2M3puf+PReQCxe1SdVl3fFWceF5n1yVxbRj400ZRhVdrAH4Dq4qQ9nZR+2/K3h3cbEVHspc=
+  - secure: ZOnp55AE5TyJ+yVYBCq9Zi6ubCwNCqcrfrffX1gvV30SgLf35loGKAv1BhIB25vpZkOnLh7NhBmizkK2FDV91Q8NwDTDgI9ZOyzTqlBDr+f8DjeDnyKXEeSUaejimr+26zn6Fu7pjSo8ea2zbq7hbszORMIyKcu38ESO5Rb3szvIWYFlBGhExMydK8sawhnkU/59cfjNCCllprUhbDUtnkgzg0bW6mxqTOdkicmgNw1bUiTULUghnKQBECM8Mt12MWc61i8CG0DKpuFXFxXteBRe9u9/1iMvywVt2G7Mc9xOSdQoH12ykGUvmoMCHSZoFlMaVPk6ypo9Hdj/fo7o+LAl1LBxGVLYNf40TCNXUJR2i6U8G3ZT4dAx1UKSaMK+rKJkD95McXeJTHhlJCjgTjjPfWebTv44dmo8R7R/e33TcN9a/DKO8xNfOIw+euCPC6UxPoSm2NvEevGhf8ZSBKocSrqvDAUks+rWLutuAS++0Wq8BotM2yP2NMah05yNmn/9+D7CIl/A8dB8/z+RSEu1fCSbln3441PfAoOB8VaOz2UiOupQ66YTVPF3p6LtI/PhsLvRn7oYaLRd9IgfoA4LpIfTPInRA/7Yr/4pflQ9z3upRnqcnjy2E3UD0W07ys+ZztdR99wCY+nmxkaWfyuZtYEGWqKwSvJP1cOm+K8=
+  - secure: Qm7ldokP2/CXAP1oHgTQWYoUQC2GEsce0u5dYup1J/CpD7Ehz6lTJG8YBCWjaUqzTCoVv2Giy+j9z5kBuvaTlVemdsdP7VOdX2Xv29Dpg+UUluFakLHFInn3k74Ckt4zLSUWhhblDtpYK/FEnCva26Em1dIMVNU/vY2wGaaYfxbf12NXYaFqReUslLlTFCe2MZoQW5yyjk2am8hZKRnqIVjcjBsrKBmi1agg8Z+ARsJ+2XrKl6vP0quAzw1tty/GZHrKcoAiilqNSzAAU1piowQ/cceTGD9JjY0ijWLttK7lIvRC3NMmVgSCWfdlbwkNonpYxbyB5XSICOW2DZhQMaS7LiHRgJnWtNad4JNxtbMNWX5cDTKdthfLNWsQWQ1SdveVGe9JyhFJS+zsDFI5CdWopwtXgRJI5GFDYu6orjmidZCbw7/Q42IShPgnBkpQp31f1QVrXo4mEnXKCGVVgZIJW3yV9T8Ybmx5s9dU77ZjrqLfnhIXblwUmTqZvfAz5tVC9ETQckulCzJ0JfuXzwoGWt1YuBiyfshg8LhETp4HlCJuLfOoBaUZ92u5oyrXrsIcetqyoLzWObMv4h/PsCxPCnaEyRMuHQE99wX5BO52KodvGMVP/a+JyzUvaUx33XK+PVxi7o814PPPrJ0DFtLHrpurv15eHKLJz17XCes=
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+before_script:
+- sh -e /etc/init.d/xvfb start
+- sleep 3
+- sudo apt-get clean
+- sudo apt-get update
+- sudo apt-get install dpkg
+- sudo apt-get install -y libappindicator1 fonts-liberation
+- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- sudo dpkg -i google-chrome*.deb
+- npm install
+script:
+- npm run register
